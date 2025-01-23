@@ -10,6 +10,9 @@ export default defineConfig({
     },
   },
   server: {
+    headers: {
+      'X-Frame-Options': 'ALLOW'
+    },
     port: 3001
   },
 })
