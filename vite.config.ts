@@ -9,10 +9,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    port: 3001
+  },
   server: {
-    headers: {
-      'X-Frame-Options': 'ALLOW'
-    },
     port: 3001
   },
 })
